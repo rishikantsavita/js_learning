@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_learning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h2>javascript Learning from <strong>Roadmaps Website</strong></h2>
+
+    <h3>Q - What is a javascript ?</h3>
+    <p>Ans - JavaScript is a high-level, dynamic programming language that is widely used in web development. It allows
+        developers to create interactive effects within web browsers. JavaScript enables features like updating content
+        dynamically, handling user input, creating animations, and making asynchronous requests to servers. It is one of
+        the core technologies of the web, alongside HTML and CSS.</p>
+    <p>javascipt is a programming language primarily used to create interactive effects and functions in websites </p>
+
+    <h3>what is variables ? </h3>
+    <p>Ans . variables is container for store data. generally there are 3 types of variables Let Const and var modern
+        use in Let and const </p>
+
+    <h5>1️⃣ var (Old Method, Avoid Using)</h5>
+    <p>🔹 Variables declared with var are function-scoped and can be redeclared.
+        🚨 Problem with var: It allows accidental redeclaration and can cause bugs.
+    </p>
+
+    <h5>2️⃣ let (Modern, Recommended)</h5>
+    <p> 🔹 let is block-scoped (only exists inside {} where it's declared).
+        🔹 It cannot be redeclared in the same scope, preventing errors.
+        🔹 Hoisting happens, but it's not initialized before declaration.
+    </p>
+
+    <h5>3️⃣ const (For Constants, Cannot Be Changed)</h5>
+    <p> 🔹 const is block-scoped (like let).
+        🔹 Must be initialized at the time of declaration.
+        🔹 Cannot be reassigned or redeclared.✅ Use const when the value should never change (like configuration
+        settings).
+    </p>
+    <p style="padding-top: 8px;">
+        <strong>Key Differences Between var, let, and const</strong><br>
+        Feature - var - let - const <br>
+        Scope - Function-scoped - Block-scoped - Block-scoped <br>
+        Hoisting - Yes (initialized as undefined) - Yes (but not initialized) - Yes (but not initialized) <br>
+        Redeclaration - ✅ Allowed - ❌ Not allowed - ❌ Not allowed <br>
+        Reassignment - ✅ Allowed - ✅ Allowed - ❌ Not allowed <br>
+        Must Initialize? - ❌ No - ❌ No - ✅ Yes <br>
+        ✅ Use let when the variable may change.
+        ✅ Use const when the variable should never change.
+        ❌ Avoid var unless working with old JavaScript code.
+    </p>
+
+    <h3>What is Hoisting in JavaScript?</h3>
+    <p>holded this topic</p>
+
+    <h3>Naming Rules in JavaScript. </h3>
+    <p>1. Allowed Characters and Rules
+        Can include: Letters (a-z, A-Z), digits (0-9), underscores (_), and dollar signs ($).
+        Cannot start with a digit (0-9).
+        Case-sensitive (myVar and myvar are different).
+        Cannot use reserved keywords (e.g., let, const, function, etc.).
+        2. Best Practices for Naming Variables
+        ✅ Use camelCase for variables and functions:
+        ✅ Use PascalCase for classes and constructors:
+        ✅ Use UPPER_CASE for constants:
+        ✅ Be descriptive and meaningful:
+    </p>
+
+    <h3>what is scope </h3>
+    <p>Scope determines the accessibility (visibility) of variables. javaScript variables have 3 types of scope:
+        1. Block scope
+        2. Function scope
+        3. Global scope
+    </p>
+
+    <h3>What is Variable Scope ? </h3>
+    <p>Variable scope determines where a variable can be accessed or used in your code. In JavaScript, there are three
+        main types of scope:
+        1. Global Scope , 2. Function (Local) Scope , 3. Block Scope (let and const) , 4. Lexical Scope (Closures) </p>
+    <p> <strong>Quick Summary</strong> <br>
+        <strong>Scope Type -- Can be accessed where? -- Declared using</strong> <br>
+        Global Scope -- Anywhere in the script -- var, let, const <br>
+        Function Scope -- Only inside the function -- var, let, const <br>
+        Block Scope -- Only inside {} (if, for, while, etc.) -- let, const (NOT var) <br>
+        Lexical Scope -- Inner functions can access outer variables -- Function closures <br>
+    </p>
+
+    <h3>What is a Data Type in JavaScript?</h3>
+    <p>Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in
+        JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects are non-primitives.</p>
+
+    <h5>1.Primitive Data Types (Immutable & stored by value)</h5>
+    <p><strong>Data Type -- Example -- Description</strong> <br>
+        Number -- 42, 3.14, -7 -- Any number (integer or floating-point) <br>
+        String -- "Hello", 'World' -- A sequence of characters <br>
+        Boolean -- true, false -- Represents logical values Booleans are commonly used in conditional statements (if,
+        else, while, etc.) to determine whether a block of code should execute.<br>
+        Undefined -- let x; -- A variable declared but not assigned a value <br>
+        Null -- let y = null; -- Represents "nothing" or an empty value <br>
+        Symbol (ES6) -- Symbol('id') -- Unique, immutable identifier <br>
+        BigInt (ES11) -- BigInt(1234567890123456789n) -- Large integers beyond Number limits
+    </p>
+    <h5>2. Non-Primitive (Reference) Data Types</h5>
+    <p>Non-primitive data types store complex values and are stored by reference in memory. <br>
+        Data Type - Example - Description <br>
+        Object - {name: "John", age: 30} - Collection of key-value pairs <br>
+        Array - [1, 2, 3, 4] - Ordered list of values <br>
+        Function - function greet() {} - A block of reusable code
+    </p>
+    <h5>Key Differences: Primitive vs. Non-Primitive</h5>
+    <p>Feature - Primitive Data Type - Non-Primitive Data Type <br>
+        Storage - Stored by value - Stored by reference <br>
+        Mutability - Immutable (cannot be changed) - Mutable (can be changed)<br>
+        Example - let x = 5; - let obj = {name: "Alice"}; <br>
+        Copying - Creates a separate copy - Copies only the reference
+    </p>
+
+    <h3>Object in JavaScript</h3>
+    <p>In JavaScript, an object is a collection of key-value pairs, where keys are strings (or Symbol) and values can be
+        of any data type, including other objects, arrays, and functions.
+    </p>
+
+
+
+    <!-- js link file -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
